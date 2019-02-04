@@ -1,0 +1,17 @@
+{
+  "name": "alex-bailare",
+  "version": "1.0.0",
+  "description": "Github page",
+  "main": "sass/main.scss",
+  "scripts": {
+    "css-build": "sass --no-source-map scss/main.scss:css/main.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "author": "Alex",
+  "license": "MIT",
+  "homepage": "https://alex-bailare.github.io",
+  "devDependencies": {
+    "sass": "^1.16.1"
+  }
+}
