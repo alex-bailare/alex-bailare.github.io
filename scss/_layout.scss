@@ -5,10 +5,27 @@
 .container {
   max-width: 960px;
   width: 90%;
-  padding: 0.5rem;
   margin: auto;
 }
 
 .center {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+
+  .col.s12 {
+    grid-column: span 12;
+  }
+
+  .col.m4 {
+    @media screen and (min-width: 768px) {
+      grid-column: span 4;
+    }
+  }
 }
