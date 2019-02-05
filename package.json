@@ -1,8 +1,8 @@
 {
   "name": "alex-bailare",
   "version": "1.0.0",
-  "description": "Github page",
-  "main": "sass/main.scss",
+  "description": "Github portfolio page",
+  "main": "scss/main.scss",
   "scripts": {
     "css-build": "sass --no-source-map scss/main.scss:css/main.css",
     "css-watch": "npm run css-build -- --watch",
