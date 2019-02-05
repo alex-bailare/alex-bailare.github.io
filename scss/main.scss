@@ -18,6 +18,29 @@ body {
   color: $black;
 }
 
+h2 {
+  margin: 0.5rem 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.card-action {
+  a {
+    font-weight: bold;
+    text-decoration: none;
+    color: $red;
+  }
+}
+
+.section-link {
+  font-weight: bold;
+  color: $dark-blue;
+  text-decoration: none;
+}
+
 .fancy {
   font-family: $fancy-font;
 }
