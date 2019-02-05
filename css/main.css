@@ -11,17 +11,17 @@
 .container {
   max-width: 960px;
   width: 90%;
-  padding: 0.5rem;
   margin: auto;
 }
 
 .center {
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
-  margin: auto;
-  max-width: 320px;
+  margin: 0.5rem 0 1rem 0;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
@@ -60,13 +60,43 @@
 }
 .card .card-action a {
   text-decoration: none;
-  color: #f32928;
   text-transform: uppercase;
-  font-weight: normal;
 }
 
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+h2 {
+  margin: 0.5rem 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+.card-action a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #f44336;
+}
+
+.section-link {
+  font-weight: bold;
+  color: #1565c0;
+  text-decoration: none;
+}
+
+.fancy {
+  font-family: "Dancing Script", cursive;
+}
+
+.strong {
+  font-family: "Lobster", cursive;
+  font-size: 2rem;
 }
 
 .hero-image {
@@ -79,39 +109,46 @@ body {
   position: relative;
 }
 .hero-image .hero-text {
+  width: 80%;
+  max-width: 960px;
+  padding: 1.5rem;
   color: #fff;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
 }
-.hero-image .hero-text h1 {
-  font-size: 3rem;
+.hero-image .hero-text .title {
+  display: block;
+  font-size: 2.5rem;
+}
+@media screen and (min-width: 768px) {
+  .hero-image .hero-text .title {
+    font-size: 3rem;
+  }
 }
 
-#interests {
-  background-color: #e0e0e0;
-  color: #333;
+.section-about p {
+  margin: 0.75rem 0;
 }
 
-#about, #projects {
-  background-color: #f5f5f5;
-  color: #333;
-}
-
-#social {
+.section-social {
   background-color: #1e88e5;
   color: #fff;
 }
-#social i {
+.section-social i {
   padding: 0.5rem;
+  color: #fff;
 }
-
-.card {
-  background-color: #f5f5f5;
+.section-social a {
+  color: #fff;
+  text-decoration: none;
 }
 
 footer {
   background-color: #1565c0;
   color: #fff;
+}
+footer .heart {
+  color: #f44336;
 }
